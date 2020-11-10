@@ -35,10 +35,13 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/4ma.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/main_1_1.o \
 	${OBJECTDIR}/newfile.o \
 	${OBJECTDIR}/newmain.o \
-	${OBJECTDIR}/newmain1.o
+	${OBJECTDIR}/newmain1.o \
+	${OBJECTDIR}/serief.o
 
 
 # C Compiler Flags
@@ -65,10 +68,20 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos1cm2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/4ma.o: 4ma.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/4ma.o 4ma.c
+
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+${OBJECTDIR}/main_1_1.o: main_1_1.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main_1_1.o main_1_1.c
 
 ${OBJECTDIR}/newfile.o: newfile.c
 	${MKDIR} -p ${OBJECTDIR}
@@ -84,6 +97,11 @@ ${OBJECTDIR}/newmain1.o: newmain1.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/newmain1.o newmain1.c
+
+${OBJECTDIR}/serief.o: serief.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/serief.o serief.c
 
 # Subprojects
 .build-subprojects:
