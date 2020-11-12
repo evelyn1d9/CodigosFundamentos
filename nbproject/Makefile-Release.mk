@@ -41,7 +41,10 @@ OBJECTFILES= \
 	${OBJECTDIR}/newfile.o \
 	${OBJECTDIR}/newmain.o \
 	${OBJECTDIR}/newmain1.o \
-	${OBJECTDIR}/serief.o
+	${OBJECTDIR}/serief.o \
+	${OBJECTDIR}/tabla.o \
+	${OBJECTDIR}/tablaas.o \
+	${OBJECTDIR}/tablas.o
 
 
 # C Compiler Flags
@@ -102,6 +105,21 @@ ${OBJECTDIR}/serief.o: serief.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/serief.o serief.c
+
+${OBJECTDIR}/tabla.o: tabla.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tabla.o tabla.c
+
+${OBJECTDIR}/tablaas.o: tablaas.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tablaas.o tablaas.c
+
+${OBJECTDIR}/tablas.o: tablas.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tablas.o tablas.c
 
 # Subprojects
 .build-subprojects:

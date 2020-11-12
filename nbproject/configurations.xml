@@ -19,6 +19,9 @@
       <itemPath>newmain.c</itemPath>
       <itemPath>newmain1.c</itemPath>
       <itemPath>serief.c</itemPath>
+      <itemPath>tabla.c</itemPath>
+      <itemPath>tablaas.c</itemPath>
+      <itemPath>tablas.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -42,7 +45,7 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="serief.c" ex="false" tool="0" flavor2="0">
+      <item path="tablaas.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -78,6 +81,12 @@
       <item path="newmain1.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="serief.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tabla.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tablaas.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tablas.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>
