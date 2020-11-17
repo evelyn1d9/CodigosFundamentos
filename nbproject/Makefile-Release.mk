@@ -36,7 +36,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/4ma.o \
-	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/main_1_1.o \
 	${OBJECTDIR}/newfile.o \
@@ -76,11 +75,6 @@ ${OBJECTDIR}/4ma.o: 4ma.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/4ma.o 4ma.c
-
-${OBJECTDIR}/for.o: for.c
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/for.o for.c
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
