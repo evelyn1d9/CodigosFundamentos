@@ -13,13 +13,13 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>4ma.c</itemPath>
+      <itemPath>for.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>main_1_1.c</itemPath>
       <itemPath>newfile.c</itemPath>
       <itemPath>newmain.c</itemPath>
       <itemPath>newmain1.c</itemPath>
       <itemPath>serief.c</itemPath>
-      <itemPath>tabla.c</itemPath>
       <itemPath>tablaas.c</itemPath>
       <itemPath>tablas.c</itemPath>
     </logicalFolder>
@@ -45,7 +45,7 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="tablaas.c" ex="false" tool="0" flavor2="0">
+      <item path="for.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -70,6 +70,8 @@
       </compileType>
       <item path="4ma.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="for.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main_1_1.c" ex="false" tool="0" flavor2="0">
@@ -81,8 +83,6 @@
       <item path="newmain1.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="serief.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="tabla.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="tablaas.c" ex="false" tool="0" flavor2="0">
       </item>

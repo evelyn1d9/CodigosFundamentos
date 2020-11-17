@@ -36,13 +36,13 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/4ma.o \
+	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/main_1_1.o \
 	${OBJECTDIR}/newfile.o \
 	${OBJECTDIR}/newmain.o \
 	${OBJECTDIR}/newmain1.o \
 	${OBJECTDIR}/serief.o \
-	${OBJECTDIR}/tabla.o \
 	${OBJECTDIR}/tablaas.o \
 	${OBJECTDIR}/tablas.o
 
@@ -76,6 +76,11 @@ ${OBJECTDIR}/4ma.o: 4ma.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/4ma.o 4ma.c
 
+${OBJECTDIR}/for.o: for.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/for.o for.c
+
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -105,11 +110,6 @@ ${OBJECTDIR}/serief.o: serief.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/serief.o serief.c
-
-${OBJECTDIR}/tabla.o: tabla.c
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tabla.o tabla.c
 
 ${OBJECTDIR}/tablaas.o: tablaas.c
 	${MKDIR} -p ${OBJECTDIR}

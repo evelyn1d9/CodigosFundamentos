@@ -17,6 +17,7 @@ int main(int argc, char** argv) {
     
     int x = 1; 
     
+    
     while (x<=10) {
         
         int y = 1;
@@ -31,13 +32,6 @@ int main(int argc, char** argv) {
     
         
         
-    
-        
-        
-     
-     
-     
-     
  
  return 0;
     
