@@ -36,6 +36,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/4ma.o \
+	${OBJECTDIR}/arreglo.o \
+	${OBJECTDIR}/arreglo1.o \
 	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/main_1_1.o \
@@ -76,6 +78,16 @@ ${OBJECTDIR}/4ma.o: 4ma.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/4ma.o 4ma.c
+
+${OBJECTDIR}/arreglo.o: arreglo.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo.o arreglo.c
+
+${OBJECTDIR}/arreglo1.o: arreglo1.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo1.o arreglo1.c
 
 ${OBJECTDIR}/for.o: for.c
 	${MKDIR} -p ${OBJECTDIR}
