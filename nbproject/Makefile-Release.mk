@@ -41,9 +41,13 @@ OBJECTFILES= \
 	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/main_1_1.o \
+	${OBJECTDIR}/maximo\ y\ minimo.o \
+	${OBJECTDIR}/mburbuja.o \
 	${OBJECTDIR}/newfile.o \
 	${OBJECTDIR}/newmain.o \
 	${OBJECTDIR}/newmain1.o \
+	${OBJECTDIR}/optimizado.o \
+	${OBJECTDIR}/promedio.o \
 	${OBJECTDIR}/serief.o \
 	${OBJECTDIR}/tabla.o \
 	${OBJECTDIR}/tablaas.o \
@@ -104,6 +108,17 @@ ${OBJECTDIR}/main_1_1.o: main_1_1.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main_1_1.o main_1_1.c
 
+.NO_PARALLEL:${OBJECTDIR}/maximo\ y\ minimo.o
+${OBJECTDIR}/maximo\ y\ minimo.o: maximo\ y\ minimo.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/maximo\ y\ minimo.o maximo\ y\ minimo.c
+
+${OBJECTDIR}/mburbuja.o: mburbuja.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mburbuja.o mburbuja.c
+
 ${OBJECTDIR}/newfile.o: newfile.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -118,6 +133,16 @@ ${OBJECTDIR}/newmain1.o: newmain1.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/newmain1.o newmain1.c
+
+${OBJECTDIR}/optimizado.o: optimizado.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/optimizado.o optimizado.c
+
+${OBJECTDIR}/promedio.o: promedio.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/promedio.o promedio.c
 
 ${OBJECTDIR}/serief.o: serief.c
 	${MKDIR} -p ${OBJECTDIR}

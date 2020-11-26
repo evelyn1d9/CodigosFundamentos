@@ -14,19 +14,20 @@
  */
 int main(int argc, char** argv) {
 
-    int  arreglo[100];
-
+    int  arreglo[100]; 
+    int  arregloA[100];
+          
     arreglo[0] = 2;
     arreglo[1] = 3;
-    arreglo[2] = 5;
+    
     
     int  sumatoria = 0;
     
     
-   for (int x = 0; x<100; x++) {
+   for (int x = 0; x<=100; x++) {
       
       
-      sumatoria = arreglo[x] + arreglo[x];
+      sumatoria = (arreglo[x] + arregloA[x]) + (arreglo[x] + arregloA[x]);
      
           
        printf("la suma es %d\n",sumatoria);  
