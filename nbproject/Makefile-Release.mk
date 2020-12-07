@@ -38,7 +38,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/4ma.o \
 	${OBJECTDIR}/arreglo.o \
 	${OBJECTDIR}/arreglo1.o \
+	${OBJECTDIR}/conversor.o \
 	${OBJECTDIR}/for.o \
+	${OBJECTDIR}/funciones.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/main_1_1.o \
 	${OBJECTDIR}/maximo\ y\ minimo.o \
@@ -93,10 +95,20 @@ ${OBJECTDIR}/arreglo1.o: arreglo1.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo1.o arreglo1.c
 
+${OBJECTDIR}/conversor.o: conversor.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conversor.o conversor.c
+
 ${OBJECTDIR}/for.o: for.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/for.o for.c
+
+${OBJECTDIR}/funciones.o: funciones.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/funciones.o funciones.c
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
