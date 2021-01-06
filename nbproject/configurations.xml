@@ -13,6 +13,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>1.c</itemPath>
+      <itemPath>2.c</itemPath>
       <itemPath>4ma.c</itemPath>
       <itemPath>arreglo.c</itemPath>
       <itemPath>arreglo1.c</itemPath>
@@ -55,7 +56,7 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="1.c" ex="false" tool="0" flavor2="0">
+      <item path="2.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -79,6 +80,8 @@
         </asmTool>
       </compileType>
       <item path="1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="2.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="4ma.c" ex="false" tool="0" flavor2="0">
       </item>
