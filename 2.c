@@ -8,25 +8,49 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 /*
  * 
  */
-void main (int argc, char** argv) {
+int main (int argc, char** argv) { 
+    
 
-    int arreglo[10];
     int x;
+    int imp;
+    int z;
+    int y;
+    int arreglo[15];
     
-    for (x=1; x<=10; x++) {
-        arreglo[x] = x;
-    }
-    
-    for (x=1; x<=10; x++) {
-        printf("%d\n",arreglo[x]);
+    y=0;
+    for(x=1; x<=15; x++); {
+       
         
+                          }
+    
+    imp = 0;
+    for(z=1; z<=x; z++) {
+        if (x%z==0);
+    }       
+
+    imp++;
+    
+     if (imp==2 || z==1 || z==0) {
+         
+        
+         arreglo[y] = x;
+         y++;
+        }
+       
+    
+           
+            for (x=0;x<y;x++)
+            {
+        printf("%d\n",arreglo[x]);
     }
-    system("pause");
-    
-    
+           
+    system("PAUSE");     
+    return 0;
 }
+            
+    
+        

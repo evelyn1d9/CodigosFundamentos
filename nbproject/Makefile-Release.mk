@@ -37,9 +37,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/1.o \
 	${OBJECTDIR}/2.o \
+	${OBJECTDIR}/3.o \
 	${OBJECTDIR}/4ma.o \
+	${OBJECTDIR}/arrayca.o \
 	${OBJECTDIR}/arreglo.o \
 	${OBJECTDIR}/arreglo1.o \
+	${OBJECTDIR}/cade.o \
 	${OBJECTDIR}/conversor.o \
 	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/funciones.o \
@@ -92,10 +95,20 @@ ${OBJECTDIR}/2.o: 2.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/2.o 2.c
 
+${OBJECTDIR}/3.o: 3.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/3.o 3.c
+
 ${OBJECTDIR}/4ma.o: 4ma.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/4ma.o 4ma.c
+
+${OBJECTDIR}/arrayca.o: arrayca.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arrayca.o arrayca.c
 
 ${OBJECTDIR}/arreglo.o: arreglo.c
 	${MKDIR} -p ${OBJECTDIR}
@@ -106,6 +119,11 @@ ${OBJECTDIR}/arreglo1.o: arreglo1.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo1.o arreglo1.c
+
+${OBJECTDIR}/cade.o: cade.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/cade.o cade.c
 
 ${OBJECTDIR}/conversor.o: conversor.c
 	${MKDIR} -p ${OBJECTDIR}
