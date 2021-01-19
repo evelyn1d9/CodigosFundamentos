@@ -45,9 +45,11 @@ OBJECTFILES= \
 	${OBJECTDIR}/cade.o \
 	${OBJECTDIR}/conversor.o \
 	${OBJECTDIR}/for.o \
+	${OBJECTDIR}/func.o \
 	${OBJECTDIR}/funciones.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/main_1_1.o \
+	${OBJECTDIR}/mainh.o \
 	${OBJECTDIR}/maximo\ y\ minimo.o \
 	${OBJECTDIR}/mburbuja.o \
 	${OBJECTDIR}/newfile.o \
@@ -135,6 +137,11 @@ ${OBJECTDIR}/for.o: for.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/for.o for.c
 
+${OBJECTDIR}/func.o: func.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/func.o func.c
+
 ${OBJECTDIR}/funciones.o: funciones.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -149,6 +156,11 @@ ${OBJECTDIR}/main_1_1.o: main_1_1.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main_1_1.o main_1_1.c
+
+${OBJECTDIR}/mainh.o: mainh.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mainh.o mainh.c
 
 .NO_PARALLEL:${OBJECTDIR}/maximo\ y\ minimo.o
 ${OBJECTDIR}/maximo\ y\ minimo.o: maximo\ y\ minimo.c

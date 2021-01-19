@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>funcioness.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -22,9 +23,11 @@
       <itemPath>cade.c</itemPath>
       <itemPath>conversor.c</itemPath>
       <itemPath>for.c</itemPath>
+      <itemPath>func.c</itemPath>
       <itemPath>funciones.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>main_1_1.c</itemPath>
+      <itemPath>mainh.c</itemPath>
       <itemPath>maximo y minimo.c</itemPath>
       <itemPath>mburbuja.c</itemPath>
       <itemPath>newfile.c</itemPath>
@@ -59,7 +62,9 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="cade.c" ex="false" tool="0" flavor2="0">
+      <item path="funcioness.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mainh.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -102,11 +107,17 @@
       </item>
       <item path="for.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="func.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="funciones.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="funcioness.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main_1_1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="mainh.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="maximo y minimo.c" ex="false" tool="0" flavor2="0">
       </item>
