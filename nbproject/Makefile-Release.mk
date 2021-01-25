@@ -39,14 +39,17 @@ OBJECTFILES= \
 	${OBJECTDIR}/2.o \
 	${OBJECTDIR}/3.o \
 	${OBJECTDIR}/4ma.o \
+	${OBJECTDIR}/archivos.o \
 	${OBJECTDIR}/arrayca.o \
 	${OBJECTDIR}/arreglo.o \
 	${OBJECTDIR}/arreglo1.o \
 	${OBJECTDIR}/cade.o \
 	${OBJECTDIR}/conversor.o \
+	${OBJECTDIR}/ficheros.o \
 	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/func.o \
 	${OBJECTDIR}/funciones.o \
+	${OBJECTDIR}/hanoi.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/main_1_1.o \
 	${OBJECTDIR}/mainh.o \
@@ -57,6 +60,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/newmain1.o \
 	${OBJECTDIR}/optimizado.o \
 	${OBJECTDIR}/promedio.o \
+	${OBJECTDIR}/recu.o \
+	${OBJECTDIR}/recur2.o \
 	${OBJECTDIR}/serief.o \
 	${OBJECTDIR}/tabla.o \
 	${OBJECTDIR}/tablaas.o \
@@ -107,6 +112,11 @@ ${OBJECTDIR}/4ma.o: 4ma.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/4ma.o 4ma.c
 
+${OBJECTDIR}/archivos.o: archivos.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/archivos.o archivos.c
+
 ${OBJECTDIR}/arrayca.o: arrayca.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -132,6 +142,11 @@ ${OBJECTDIR}/conversor.o: conversor.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/conversor.o conversor.c
 
+${OBJECTDIR}/ficheros.o: ficheros.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ficheros.o ficheros.c
+
 ${OBJECTDIR}/for.o: for.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -146,6 +161,11 @@ ${OBJECTDIR}/funciones.o: funciones.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/funciones.o funciones.c
+
+${OBJECTDIR}/hanoi.o: hanoi.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/hanoi.o hanoi.c
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
@@ -197,6 +217,16 @@ ${OBJECTDIR}/promedio.o: promedio.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/promedio.o promedio.c
+
+${OBJECTDIR}/recu.o: recu.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/recu.o recu.c
+
+${OBJECTDIR}/recur2.o: recur2.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/recur2.o recur2.c
 
 ${OBJECTDIR}/serief.o: serief.c
 	${MKDIR} -p ${OBJECTDIR}
